@@ -1,0 +1,17 @@
+include_recipe "nodejs"
+
+nodejs_npm "phonegap"
+nodejs_npm "yo"
+nodejs_npm "grunt-cli"
+nodejs_npm "bower"
+nodejs_npm "ionic"
+nodejs_npm "cordova"
+nodejs_npm "generator-karma"
+nodejs_npm "generator-angular"
+nodejs_npm "generator-angular-fullstack"
+nodejs_npm "generator-mobile"
+nodejs_npm "generator-express"
+nodejs_npm "generator-backbone"
+#A Yeoman generator for scaffolding an application using angular, browserify, ionic and famous.
+nodejs_npm "generator-mcfly"
+nodejs_npm "generator-bootstrap"
