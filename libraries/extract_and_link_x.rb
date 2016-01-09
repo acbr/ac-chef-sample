@@ -28,7 +28,7 @@ module ExtractAndLinkX
           compress_char "#{new_resource.compress_char}"
         end
         
-        execute "ln -s '#{new_resource.file_link_source}' #{new_resource.file_link_target}" do
+        execute "ln -s #{new_resource.file_link_source} #{new_resource.file_link_target}" do
           not_if do
             ::File.exist?("#{new_resource.file_link_target}")
           end

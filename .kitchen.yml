@@ -1,19 +1,14 @@
 ---
 driver:
-  name: vagrant
-  #docker
+  name: docker
 
-provisioner:
-  name: chef_solo
-# hashicorp/precise32
-# ubuntu-12.04
 platforms:
-  - name: hashicorp/precise32
-  #   driver:
-  #     gui: true
-  # - name: platform-version
+- name: ubuntu
+  driver_config:
+    image: ubuntu:12.04
+    platform: ubuntu
+  run_list:
+  - recipe[default]
 
 suites:
-  - name: default
-    run_list:
-      - recipe[acsample::default]
+  - name: default  

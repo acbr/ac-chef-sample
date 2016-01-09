@@ -4,7 +4,7 @@ gem 'berkshelf'
 
 group :development do  
   gem 'test-kitchen'
-  gem 'kitchen-vagrant'
+  gem 'kitchen-docker'
   gem 'guard'
   gem 'guard-kitchen'
   gem 'guard-foodcritic', '>= 1.0'

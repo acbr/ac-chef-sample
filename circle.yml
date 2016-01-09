@@ -1,6 +1,6 @@
 machine:
   services:
-    - vagrant
+    - docker
 dependencies:
   pre:
     - if ! chef -v; then
@@ -12,7 +12,8 @@ dependencies:
     - sudo gem install bundler
     - bundle install
   cache_directories:
-    - ./chefdk_0.3.5-1_amd64.deb
+    - ./chefdk_0.10.0-1_amd64.deb
 test:
   override:
     - rake
+    - kitchen test
